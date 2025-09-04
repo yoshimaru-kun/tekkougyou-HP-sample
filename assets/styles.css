@@ -252,4 +252,11 @@ a { color: inherit; text-decoration: none; }
   .hero-copy {
     height: auto;
   }
+  .hero h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+  .hero p {
+    font-size: 15px;
+  }
 }
