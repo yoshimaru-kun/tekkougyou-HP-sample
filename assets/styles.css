@@ -247,7 +247,7 @@ a { color: inherit; text-decoration: none; }
     height: auto;
     padding: 0;
     display: flex;
-    min-height: 330px;
+    min-height: 300px;
   }
   .hero-inner {
     height: auto;
