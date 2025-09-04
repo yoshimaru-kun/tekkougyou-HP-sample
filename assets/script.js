@@ -73,23 +73,3 @@ if (y) y.textContent = String(new Date().getFullYear());
     if (lb && !lb.hidden && e.key === 'Escape') close();
   });
 })();
-
-// Hero slider
-(function() {
-  const slider = document.querySelector('.hero-slider');
-  if (!slider) return;
-
-  const images = slider.querySelectorAll('img');
-  let currentImage = 0;
-
-  if (images.length > 1) {
-    // Set the first image to active immediately
-    images[currentImage].classList.add('active');
-
-    setInterval(() => {
-      images[currentImage].classList.remove('active');
-      currentImage = (currentImage + 1) % images.length;
-      images[currentImage].classList.add('active');
-    }, 5000); // Switch every 5 seconds
-  }
-})();

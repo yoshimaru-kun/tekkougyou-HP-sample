@@ -97,6 +97,9 @@ a { color: inherit; text-decoration: none; }
    ========= */
 .hero {
   border-bottom: 1px solid var(--line);
+  background-image: url(32906226_m.jpg);
+  background-size: cover;
+  background-position: center;
   position: relative;
   z-index: 1;
   color: white;
@@ -105,38 +108,13 @@ a { color: inherit; text-decoration: none; }
   place-items: center;
   aspect-ratio: 3 / 2;
   height: auto;
-  overflow: hidden;
 }
-
-.hero-slider {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.hero-slider img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 1.5s ease-in-out;
-}
-
-.hero-slider img.active {
-  opacity: 1;
-}
-
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,.4);
-  z-index: 1;
+  z-index: -1;
 }
 .hero-inner {
   height: 100%;
@@ -144,8 +122,6 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  z-index: 2;
 }
 .hero-copy {
   display: flex;
