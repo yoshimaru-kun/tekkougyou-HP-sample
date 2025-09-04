@@ -241,19 +241,26 @@ a { color: inherit; text-decoration: none; }
     margin-bottom: 30px;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: top center;
     background-color: var(--bg);
     aspect-ratio: auto;
     height: auto;
-    padding: 120px 0;
+    padding: 0;
+    display: flex;
+    min-height: 380px;
   }
   .hero-inner {
     height: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
   }
   .hero-copy {
-    height: auto;
+    height: 100%;
   }
   .hero-copy > div:first-of-type {
-    margin-bottom: 30px;
+    margin-bottom: auto;
   }
   .hero h1 {
     font-size: 22px;
